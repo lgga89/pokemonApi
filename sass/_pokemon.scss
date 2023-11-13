@@ -3,7 +3,7 @@
     margin: 40px 20px 0 20px;
     .figure__poke {
       text-align: center;
-      background-color: #f2f2f2;
+      background-color: $color_fondoPokemon;
       .img__poke {
         width: 100%;
       }
@@ -11,11 +11,11 @@
     .container__description {
       .id__poke {
         margin: 2px;
-        color: #919191;
+        color: $color_IdPokemon;
       }
       .name__poke {
         font-family: "Flexo-Regular", arial, sans-serif;
-        color: #212121;
+        color: $color_namePokemon;
         text-transform: none;
         font-size: 18px;
         margin: 5px 0 10px 0;
@@ -73,10 +73,11 @@
 
 //bicho
 .type__poke--bicho {
-  background-color: #729f3f;
+  background-color: $color_bicho;
+  color: $color_blanco;
 }
 .espe__poke--bicho {
-  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  background: $color_bicho_volador;
 }
 
 //----MOVIL----
