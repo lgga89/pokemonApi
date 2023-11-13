@@ -40,9 +40,10 @@
   /* Centrar verticalmente */
 }
 
-.btn__poke .type__poke--plant {
-  background-color: #9bcc50;
-  color: #212121;
+.container__pokemon .container__poke .btn__poke .type__poke--plant,
+.container__pokemon .container__poke .btn__poke .type__poke--fire,
+.container__pokemon .container__poke .btn__poke .type__poke--agua,
+.container__pokemon .container__poke .btn__poke .type__poke--bicho {
   line-height: 18px;
   font-size: 11px;
   text-align: center;
@@ -51,88 +52,41 @@
   margin: 0 15px 0 0;
 }
 
+.container__pokemon .container__poke .btn__poke .espe__poke--plant,
+.container__pokemon .container__poke .btn__poke .espe__poke--bicho {
+  line-height: 18px;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 3px;
+  width: 30%;
+  margin: 0 20px 0 0;
+}
+
+.btn__poke .type__poke--plant {
+  background-color: #9bcc50;
+}
+
 .btn__poke .espe__poke--plant {
   background-color: #b97fc9;
-  color: white;
-  line-height: 18px;
-  font-size: 11px;
-  text-align: center;
-  border-radius: 3px;
-  width: 30%;
-  margin: 0 20px 0 0;
+  color: #ffff;
 }
 
-.btn__poke .type__poke--fire {
+.type__poke--fire {
   background-color: #fd7d24;
-  color: #212121;
-  line-height: 18px;
-  font-size: 11px;
-  text-align: center;
-  border-radius: 3px;
-  width: 30%;
-  margin: 0 20px 0 0;
 }
 
-.btn__poke {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  /* Centrar horizontalmente */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Centrar verticalmente */
-}
-
-.btn__poke .type__poke--agua {
+.type__poke--agua {
   background-color: #4592c4;
-  color: #ffffff;
-  line-height: 18px;
-  font-size: 11px;
-  text-align: center;
-  border-radius: 3px;
-  width: 30%;
-  margin: 0 20px 0 0;
+  color: #ffff;
 }
 
-.btn__poke {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  /* Centrar horizontalmente */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Centrar verticalmente */
-}
-
-.btn__poke .type__poke--bicho {
+.type__poke--bicho {
   background-color: #729f3f;
-  color: #ffffff;
-  line-height: 18px;
-  font-size: 11px;
-  text-align: center;
-  border-radius: 3px;
-  width: 30%;
-  margin: 0 20px 0 0;
 }
 
-.btn__poke .espe__poke--bicho {
+.espe__poke--bicho {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #3dc7ef), color-stop(50%, #bdb9b8));
   background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
-  color: white;
-  line-height: 18px;
-  font-size: 11px;
-  text-align: center;
-  border-radius: 3px;
-  width: 30%;
-  margin: 0 20px 0 0;
 }
 
 @media (min-width: 500px) {

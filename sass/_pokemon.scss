@@ -26,86 +26,57 @@
       display: flex;
       justify-content: left; /* Centrar horizontalmente */
       align-items: center; /* Centrar verticalmente */
+      .type__poke--plant,
+      .type__poke--fire,
+      .type__poke--agua,
+      .type__poke--bicho {
+        line-height: 18px;
+        font-size: 11px;
+        text-align: center;
+        border-radius: 3px;
+        width: 30%;
+        margin: 0 15px 0 0;
+      }
+      .espe__poke--plant,
+      .espe__poke--bicho {
+        line-height: 18px;
+        font-size: 11px;
+        text-align: center;
+        border-radius: 3px;
+        width: 30%;
+        margin: 0 20px 0 0;
+      }
     }
   }
 }
 //hierba
 .btn__poke {
   .type__poke--plant {
-    background-color: #9bcc50;
-    color: #212121;
-    line-height: 18px;
-    font-size: 11px;
-    text-align: center;
-    border-radius: 3px;
-    width: 30%;
-    margin: 0 15px 0 0;
+    background-color: $color_hierba;
   }
   .espe__poke--plant {
-    background-color: #b97fc9;
-    color: white;
-    line-height: 18px;
-    font-size: 11px;
-    text-align: center;
-    border-radius: 3px;
-    width: 30%;
-    margin: 0 20px 0 0;
+    background-color: $color_veneno;
+    color: $color_blanco;
   }
 }
+
 //fuego
-.btn__poke {
-  .type__poke--fire {
-    background-color: #fd7d24;
-    color: #212121;
-    line-height: 18px;
-    font-size: 11px;
-    text-align: center;
-    border-radius: 3px;
-    width: 30%;
-    margin: 0 20px 0 0;
-  }
+.type__poke--fire {
+  background-color: $color_fire;
 }
+
 //agua
-.btn__poke {
-  display: flex;
-  justify-content: left; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  .type__poke--agua {
-    background-color: #4592c4;
-    color: #ffffff;
-    line-height: 18px;
-    font-size: 11px;
-    text-align: center;
-    border-radius: 3px;
-    width: 30%;
-    margin: 0 20px 0 0;
-  }
+.type__poke--agua {
+  background-color: $color_agua;
+  color: $color_blanco;
 }
+
 //bicho
-.btn__poke {
-  display: flex;
-  justify-content: left; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  .type__poke--bicho {
-    background-color: #729f3f;
-    color: #ffffff;
-    line-height: 18px;
-    font-size: 11px;
-    text-align: center;
-    border-radius: 3px;
-    width: 30%;
-    margin: 0 20px 0 0;
-  }
-  .espe__poke--bicho {
-    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
-    color: white;
-    line-height: 18px;
-    font-size: 11px;
-    text-align: center;
-    border-radius: 3px;
-    width: 30%;
-    margin: 0 20px 0 0;
-  }
+.type__poke--bicho {
+  background-color: #729f3f;
+}
+.espe__poke--bicho {
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
 }
 
 //----MOVIL----
