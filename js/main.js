@@ -1,49 +1,47 @@
-//LLAMAOS PARA QUE SE EJECUTE
+const containerPoke = document.querySelector("#list__pokemon");
+let URL = "https://pokeapi.co/api/v2/pokemon/";
 
-const llamandoApi = () => {
-  console.log("Hello World");
-};
+for (let i = 1; i <= 151; i++) {
+  fetch(URL + i)
+    .then((res) => res.json())
+    .then((data) => mostrarPokemon(data));
+}
 
-llamandoApi();
+function mostrarPokemon(poke) {
+  const section = document.querySelector("section");
+  section.classList.add("container__poke");
+  section.innerHTML = `
+  <div class="figure__poke">
+        <img class="img__poke" src="./img/01.png" alt="">
+      </div>
 
-//llamar a la API
-const llamandoAPI = async () => {
-  const respuesta = await fetch(
-    "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
-  );
-  console.log(respuesta);
-};
+      <article class="container__description">
+        <p class="id__poke"><span>N°${poke.id}</span></p>
+        <h2 class="name__poke">${poke.name}</h2>
+      </article>
 
-llamandoAPI();
 
-//vliara algun tipo de error
+      <article class="btn__poke">
+        <div class="type__poke--plant">Planta</div>
+        <div class="espe__poke--plant">Veneno</div>
+      </article>
+  
+  
+  `;
+}
+/*<section class="container__poke" id="list__pokemon">
+      <div class="figure__poke">
+        <img class="img__poke" src="./img/01.png" alt="">
+      </div>
 
-const llamandoAPI = async () => {
-  try {
-    const respuesta = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
-    );
-    console.log(respuesta);
-  } catch (error) {
-    console.log(error);
-  }
-};
+      <article class="container__description">
+        <p class="id__poke"><span>N.º 0001</span></p>
+        <h2 class="name__poke">Bulbasaur</h2>
+      </article>
 
-llamandoAPI();
 
-//ACCEDER A LOS DATOS  A LA INFORMACION
-const llamandoAPI = async () => {
-  try {
-    const respuesta = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
-    );
-
-    const data = respuesta.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-llamandoAPI();
-//https://chat.openai.com/c/6108b1b7-e718-4e97-a37a-32c21d833ff1
+      <article class="btn__poke">
+        <div class="type__poke--plant">Planta</div>
+        <div class="espe__poke--plant">Veneno</div>
+      </article>
+    </section> */
