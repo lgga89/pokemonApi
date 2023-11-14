@@ -7,12 +7,15 @@ for (let i = 1; i <= 151; i++) {
     .then((data) => mostrarPokemon(data));
 }
 
+let tipos = poke.types.map((type) => type.type.name);
+
 function mostrarPokemon(poke) {
   const section = document.querySelector("section");
-  section.classList.add("container__poke");
+  section.classList.add("container__pokemon");
   section.innerHTML = `
-  <div class="figure__poke">
-        <img class="img__poke" src="./img/01.png" alt="">
+  <section class="container__poke" id="list__pokemon">
+      <div class="figure__poke">
+        <img class="img__poke" src="${poke.sprites.other.dream_world.front_default}" alt="">
       </div>
 
       <article class="container__description">
@@ -22,26 +25,10 @@ function mostrarPokemon(poke) {
 
 
       <article class="btn__poke">
-        <div class="type__poke--plant">Planta</div>
-        <div class="espe__poke--plant">Veneno</div>
+        <div class="type__poke--plant">${poke.past_abilities}</div>
+        <div class="espe__poke--plant">${poke.past_types}</div>
       </article>
-  
-  
-  `;
+  </section>
+
+    `;
 }
-/*<section class="container__poke" id="list__pokemon">
-      <div class="figure__poke">
-        <img class="img__poke" src="./img/01.png" alt="">
-      </div>
-
-      <article class="container__description">
-        <p class="id__poke"><span>N.º 0001</span></p>
-        <h2 class="name__poke">Bulbasaur</h2>
-      </article>
-
-
-      <article class="btn__poke">
-        <div class="type__poke--plant">Planta</div>
-        <div class="espe__poke--plant">Veneno</div>
-      </article>
-    </section> */
