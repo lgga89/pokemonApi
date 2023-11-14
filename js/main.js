@@ -1,4 +1,4 @@
-const containerPoke = document.querySelector("#list__pokemon");
+const listaPokemon = document.querySelector("#list__pokemon");
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
 for (let i = 1; i <= 151; i++) {
@@ -6,29 +6,31 @@ for (let i = 1; i <= 151; i++) {
     .then((res) => res.json())
     .then((data) => mostrarPokemon(data));
 }
+//boteones
+let tipos = poke.types.map(
+  (type) =>
+    `<div class="${type.type.name}type__poke--plant">${type.type.name}</div>`
+);
+tipos = tipos.join("");
 
-let tipos = poke.types.map((type) => type.type.name);
-
-function mostrarPokemon(poke) {
-  const section = document.querySelector("section");
-  section.classList.add("container__pokemon");
+//contenedor
+let mostrarPokemon = (poke) => {
+  const section = document.createElement("section");
+  section.classList.add("container__poke");
   section.innerHTML = `
-  <section class="container__poke" id="list__pokemon">
+  
       <div class="figure__poke">
         <img class="img__poke" src="${poke.sprites.other.dream_world.front_default}" alt="">
       </div>
-
       <article class="container__description">
         <p class="id__poke"><span>N°${poke.id}</span></p>
         <h2 class="name__poke">${poke.name}</h2>
       </article>
-
-
       <article class="btn__poke">
-        <div class="type__poke--plant">${poke.past_abilities}</div>
-        <div class="espe__poke--plant">${poke.past_types}</div>
+        ${tipos}
       </article>
-  </section>
+
 
     `;
-}
+  listaPokemon.append(section);
+};
