@@ -15,109 +15,31 @@ html {
   }
 }
 
-.header {
-  display: none;
-}
-
-/*
 //------------MENU PC----------------//
-header {
-  .header__img {
-    margin-top: 20px;
-    width: 70px;
-    display: none;
-  }
-  .header__nav-menu {
-    padding: 10px;
-    display: none;
-    background-color: rgba(255, 0, 0, 0.754);
-    .header__enlace-menu {
-      margin: 0 10px 0px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-  }
-}
-
-
-
-
-
-//---HEADER
-//MENU CELULAR
-@media (min-width: 100px) {
-  .header__logo--nav {
-    text-align: center;
-    .header__img--nav {
-      padding: 5px 5px;
-      width: 80px;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .header__nav {
-    .header__logo {
-      .header__img {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (min-width: 925px) {
-  .header__nav {
-    display: flex;
-    .header__logo--nav {
-      .header__img--nav {
-        padding: 10px;
-        width: 8%;
-        float: left;
-      }
-    }
-  }
-}
-
-@media (min-width: 425px) {
-  .nave {
-    #burger {
-      display: none;
-    }
-    .hambuerguesa {
-      display: none;
-    }
-  }
-  .header {
-    padding: 10px;
-    .header__nav-menu {
-      display: flex;
-      align-items: center;
-      padding: 10px 0px;
-      .btn {
-        background: #00ab30;
-        border-radius: 10px;
-        padding: 5px 10px;
-        border: none;
-      }
-      .header__enlace-menu {
-        text-align: left;
-        font-size: 20px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    margin: 0 5%;
-    .header {
-      padding: 0;
-      .header__nav-menu {
-        a {
-          margin: 0 20px 0 0;
+@media (min-width: 700px) {
+  .container__principal {
+    .nav__burger {
+      .nave {
+        .hambuerguesa {
+          display: none;
         }
       }
     }
   }
+  header {
+    background-color: red;
+
+    .header__nav-menu {
+      display: flex;
+      justify-content: center; // Añadido para centrar horizontalmente
+      align-items: center; // Añadido para centrar verticalmente
+      padding: 10px 0; // Ajusta según sea necesario
+      .header__enlace-menu {
+        display: block;
+        color: black;
+        margin: 0 10px; // Ajusta el margen según sea necesario
+        text-decoration: none; // Para quitar el subrayado del enlace
+      }
+    }
+  }
 }
-*/

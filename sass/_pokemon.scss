@@ -87,13 +87,3 @@
     justify-content: center;
   }
 }
-
-@media (min-width: 700px) {
-  .container__principal {
-    .header {
-      .header__nav-menu {
-        display: block;
-      }
-    }
-  }
-}

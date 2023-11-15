@@ -19,7 +19,7 @@
 }
 
 .nav-item,
-a {
+.header__enlace-menu {
   border: 1 solid;
   margin: 75px 0 -55px 0;
   color: #ffffff;
@@ -106,23 +106,4 @@ a {
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   display: none;
-}
-@media (min-width: 700px) {
-  .container__principal {
-    .nav__burger {
-      .nave {
-        .hambuerguesa {
-          display: none;
-        }
-      }
-    }
-  }
-  .container__principal {
-    .header {
-      .header__nav-menu {
-        .header__enlace-menu {
-        }
-      }
-    }
-  }
 }
