@@ -13,9 +13,9 @@
 @media (min-width: 700px) {
   header {
     .header__nav-menu {
-      .header__enlace-menu {
-        background-color: #ffff;
-        border-radius: 10%;
+      #normal {
+        background-color: rgb(132, 132, 114);
+        color: #ffffff;
       }
     }
   }
