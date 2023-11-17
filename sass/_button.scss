@@ -14,8 +14,68 @@
   header {
     .header__nav-menu {
       #normal {
-        background-color: rgb(132, 132, 114);
+        background-color: $normal;
         color: #ffffff;
+      }
+      #fire {
+        color: #ffffff;
+        background-color: $color_fire;
+      }
+      #water {
+        color: #ffffff;
+        background-color: $color_agua;
+      }
+      #grass {
+        color: #000000;
+        background-color: $grass;
+      }
+      #electric {
+        color: #000000;
+        background-color: electric;
+      }
+      #ice {
+        color: #000000;
+        background-color: rgb(0, 255, 247);
+      }
+      #fighting {
+        color: #ffffff;
+        background-color: rgb(58, 71, 70);
+      }
+      #poison {
+        color: #ffffff;
+        background-color: $poison;
+      }
+      #ground {
+        color: #ffffff;
+        background-color: rgb(19, 92, 170);
+      }
+      #flying {
+        color: #ffffff;
+        background-color: rgba(0, 255, 225, 0.507);
+      }
+      #psychic {
+        color: #000000;
+        background-color: rgb(255, 251, 0);
+      }
+      #bug {
+        color: #000000;
+        background-color: #3def5b;
+      }
+      #rock {
+        color: #ffffff;
+        background-color: rgb(60, 68, 61);
+      }
+      #ghost {
+        color: #ffffff;
+        background-color: rgba(0, 149, 255, 0.715);
+      }
+      #dragon {
+        color: #000000;
+        background-color: rgb(255, 128, 0);
+      }
+      #fairy {
+        color: #000000;
+        background-color: rgb(255, 147, 232);
       }
     }
   }

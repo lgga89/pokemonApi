@@ -6,15 +6,16 @@ for (let i = 1; i <= 151; i++) {
     .then((res) => res.json())
     .then((data) => mostrarPokemon(data));
 }
-//boteones
-let tipos = poke.types.map(
-  (type) =>
-    `<div class="${type.type.name}type__poke--plant">${type.type.name}</div>`
-);
-tipos = tipos.join("");
 
 //contenedor
 let mostrarPokemon = (poke) => {
+  //boteones
+
+  let tipos = poke.types.map(
+    (type) => `<div class="${type.type.name}type__poke">${type.type.name}</div>`
+  );
+  tipos = tipos.join("");
+
   const section = document.createElement("section");
   section.classList.add("container__poke");
   section.innerHTML = `
