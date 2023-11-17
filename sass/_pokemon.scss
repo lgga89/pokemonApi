@@ -44,7 +44,16 @@
     .watertype__poke,
     .normaltype__poke,
     .flyingtype__poke,
-    .electrictype__poke {
+    .electrictype__poke,
+    .fightingtype__poke,
+    .groundtype__poke,
+    .psychictype__poke,
+    .rocktype__poke,
+    .ghosttype__poke,
+    .icetype__poke,
+    .dragontype__poke,
+    .fairytype__poke,
+    .steeltype__poke {
       color: rgb(0, 0, 0);
       line-height: 18px;
       font-size: 11px;
@@ -56,9 +65,11 @@
       font-family: "Flexo-Regular", arial, sans-serif;
       font-weight: bold;
     }
+
     .bugtype__poke {
       background: $bug;
     }
+
     .poisontype__poke {
       background: $poison;
       color: $color_blanco;
@@ -71,9 +82,11 @@
     }
     .watertype__poke {
       background: $color_agua;
+      color: $color_blanco;
     }
     .normaltype__poke {
       background: $normal;
+      color: $color_blanco;
     }
     .flyingtype__poke {
       background: $color_bicho_volador;
@@ -83,41 +96,44 @@
       background: $electric;
       color: $color_negro;
     }
+    .icetype__poke {
+      background: $ice;
+      color: $color_negro;
+    }
+    .fightingtype__poke {
+      background-color: $fighting;
+      color: $color_blanco;
+    }
+    .groundtype__poke {
+      background-color: $ground;
+      color: $color_blanco;
+    }
+    .psychictype__poke {
+      background-color: $psychic;
+      color: $color_blanco;
+    }
+    .rocktype__poke {
+      background-color: $rock;
+      color: $color_blanco;
+    }
+    .ghosttype__poke {
+      background-color: $ghost;
+      color: $color_blanco;
+    }
+    .dragontype__poke {
+      background-color: $dragon;
+      color: $color_blanco;
+    }
+    .fairytype__poke {
+      background-color: $fairy;
+      color: black;
+    }
+    .steeltype__poke {
+      background-color: $steel;
+      color: black;
+    }
   }
 }
-/*
-//hierba
-.btn__poke {
-  .type__poke {
-    background-color: $color_hierba;
-  }
-  .espe__poke--plant {
-    background-color: $color_veneno;
-    color: $color_blanco;
-  }
-}
-
-//fuego
-.type__poke--fire {
-  background-color: $color_fire;
-}
-
-//agua
-.type__poke--agua {
-  background-color: $color_agua;
-  color: $color_blanco;
-}
-
-//bicho
-.type__poke--bicho {
-  background-color: $color_bicho;
-  color: $color_blanco;
-}
-.espe__poke--bicho {
-  background: $color_bicho_volador;
-}
-
-*/
 
 //----MOVIL----
 @media (min-width: 500px) {

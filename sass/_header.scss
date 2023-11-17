@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 //------------------container-----------------------
 .container__principal {
   max-width: 1600px;
@@ -28,7 +29,7 @@ html {
   }
   header {
     background-color: red;
-    width: 100%;
+
     .header__nav-menu {
       display: flex;
       justify-content: center; // Añadido para centrar horizontalmente

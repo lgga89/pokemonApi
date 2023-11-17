@@ -31,15 +31,18 @@
       }
       #electric {
         color: #000000;
-        background-color: electric;
+        background-color: $electric;
+      }
+      #steel {
+        background-color: $steel;
       }
       #ice {
         color: #000000;
-        background-color: rgb(0, 255, 247);
+        background-color: $ice;
       }
       #fighting {
         color: #ffffff;
-        background-color: rgb(58, 71, 70);
+        background-color: $fighting;
       }
       #poison {
         color: #ffffff;
@@ -47,7 +50,7 @@
       }
       #ground {
         color: #ffffff;
-        background-color: rgb(19, 92, 170);
+        background-color: $ground;
       }
       #flying {
         color: #ffffff;
@@ -55,7 +58,7 @@
       }
       #psychic {
         color: #000000;
-        background-color: rgb(255, 251, 0);
+        background-color: $psychic;
       }
       #bug {
         color: #000000;
@@ -63,19 +66,19 @@
       }
       #rock {
         color: #ffffff;
-        background-color: rgb(60, 68, 61);
+        background-color: $rock;
       }
       #ghost {
         color: #ffffff;
-        background-color: rgba(0, 149, 255, 0.715);
+        background-color: $ghost;
       }
       #dragon {
         color: #000000;
-        background-color: rgb(255, 128, 0);
+        background-color: $dragon;
       }
       #fairy {
         color: #000000;
-        background-color: rgb(255, 147, 232);
+        background-color: $fairy;
       }
     }
   }
